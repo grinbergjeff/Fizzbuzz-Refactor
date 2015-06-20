@@ -9,6 +9,8 @@ function refactfizzbuzz() {
 			//Reset input field back to placeholder
 			$(this).val('');
 		}
+		//Clear current printed values of buzzfizz
+		$('#results').empty();
 		//Run Fizzbuzz with newmaxvalue
 		buzzfizz(newmaxvalue);
 	
@@ -19,23 +21,23 @@ function buzzfizz (maxvalue) {
 			//Prioritize if conditions to check for divisible by 3 AND 5
 			if ( i % 3 === 0 && i % 5 === 0) {
 				console.log("fizz buzz");
-				$('.container').append('<p>fizzbuzz</p>');
+				$('#results').append('<p>fizzbuzz</p>');
 			
 			}
 			//Check if divisible by 3
 			else if (i % 3 === 0) {
 				console.log('fizz');	
-				$('.container').append('<p>fizz</p>');
+				$('#results').append('<p>fizz</p>');
 			}
 			//Check if divisble by 5
 			else if (i % 5 === 0) {
 				console.log('buzz');
-				$('.container').append('<p>buzz</p>');
+				$('#results').append('<p>buzz</p>');
 			}
 			//Finally, since the number is not div by 3 or 5, just print number
 			else {
 				console.log(i);	
-				$('.container').append('<p>' + i + '</p>');
+				$('#results').append('<p>' + i + '</p>');
 			}
 		}	
 }

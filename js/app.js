@@ -6,8 +6,14 @@ function refactfizzbuzz() {
 	$('#input-text').keydown(function(ent) {
 		if (ent.which == 13) {
 			var newmaxvalue = $('#input-text').val();
+			if (newmaxvalue % 1 !== 0 || newmaxvalue > 350 || newmaxvalue < 1) {
+				$('.regular').removeClass().addClass('warning');
+				$(this).val('');
+			}
+			else {	
 			//Reset input field back to placeholder
 			$(this).val('');
+			}
 		}
 		//Clear current printed values of buzzfizz
 		$('#results').empty();

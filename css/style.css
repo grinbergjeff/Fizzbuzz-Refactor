@@ -20,7 +20,8 @@ h4{
 	margin-top: -60px;
 }
 p {
-	font-size: 15px;	
+	font-size: 15px;
+	text-align: center;
 }
 #input-text {
 	width: 30%;
@@ -41,4 +42,19 @@ p {
 }
 :-ms-input-placeholder {  
    color: #F5F5F5;  
+}
+.warning {
+	width: 30%;
+	border-radius: 5px;
+	background-color: #FF4C65;
+	text-align: center;
+	/*margin-left: 340px;*/
+}
+.regular {
+	width: 30%;	
+	text-align: center;
+	/*margin-left: 340px;*/
+}
+.warning p, .regular p{
+	padding: 4px 3px;	
 }

@@ -1,8 +1,9 @@
 body {
-	text-align: center;
 	font-family: 'Oswald', sans-serif;
 	background-color: #F1F0EC;
 	color: #F5F5F5;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
 }
 #container {
 	margin-top: 10%;
@@ -21,7 +22,6 @@ h4{
 }
 p {
 	font-size: 15px;
-	text-align: center;
 }
 #input-text {
 	width: 30%;
@@ -43,17 +43,15 @@ p {
 :-ms-input-placeholder {  
    color: #F5F5F5;  
 }
-.warning {
+#container .warning{
 	width: 30%;
 	border-radius: 5px;
 	background-color: #FF4C65;
-	text-align: center;
-	/*margin-left: 340px;*/
+	margin: 0 auto;
 }
-.regular {
-	width: 30%;	
-	text-align: center;
-	/*margin-left: 340px;*/
+#container > .regular {
+	width: 40%;
+	margin: 0 auto;
 }
 .warning p, .regular p{
 	padding: 4px 3px;	

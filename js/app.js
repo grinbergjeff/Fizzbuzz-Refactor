@@ -23,7 +23,7 @@ function refactfizzbuzz() {
 	})
 };
 function buzzfizz (maxvalue) {
-	for ( var i = 1; i < maxvalue; i++) {
+	for ( var i = 1; i <= maxvalue; i++) {
 			//Prioritize if conditions to check for divisible by 3 AND 5
 			if ( i % 3 === 0 && i % 5 === 0) {
 				console.log("fizz buzz");
